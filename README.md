@@ -32,7 +32,7 @@ This project addresses three core enterprise AI requirements:
 ```
 
 ### Tech Stack
-* **Cloud & LLM Infrastructure:** Microsoft Azure (Azure OpenAI Service: `gpt-4o-mini` & `text-embedding-3-small`)
+* **Cloud & LLM Infrastructure:** Microsoft Azure (Azure OpenAI Service: `gpt-4.1-mini` & `text-embedding-3-small`)
 * **Agent Orchestration:** LangGraph (`create_react_agent` state workflow & tool calling)
 * **RAG & Retrieval:** LangChain + FAISS (In-memory vector store for banking compliance rules)
 * **Frontend & DataViz:** Streamlit (Interactive audit trail, execution logs, and cost metrics)
@@ -44,7 +44,7 @@ This project addresses three core enterprise AI requirements:
 Below is an end-to-end walkthrough verifying the Azure AI Foundry model deployments, agentic tool-calling execution, and real-time Azure Monitor telemetry.
 
 ### 1. Azure AI Foundry Model Deployments
-Active deployments of `gpt-4o-mini` (reasoning & tool orchestration) and `text-embedding-3-small` (FAISS RAG policy indexing) in Azure AI Foundry:
+Active deployments of `gpt-4.1-mini` (reasoning & tool orchestration) and `text-embedding-3-small` (FAISS RAG policy indexing) in Azure AI Foundry:
 
 ![Azure AI Foundry Deployments](./1_deployed_open_ai_models_in_Azure_foundry.png)
 
@@ -74,7 +74,7 @@ Azure AI Foundry telemetry confirming live API hits across the deployed models f
 
 ### 1. Prerequisites
 * Python 3.10+
-* An active **Azure OpenAI** resource with deployed chat (`gpt-4o-mini`) and embedding (`text-embedding-3-small`) models.
+* An active **Azure OpenAI** resource with deployed chat (`gpt-4.1-mini`) and embedding (`text-embedding-3-small`) models.
 
 ### 2. Installation
 Clone the repository and install the required dependencies:
