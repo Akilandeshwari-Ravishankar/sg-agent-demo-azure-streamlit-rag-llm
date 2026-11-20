@@ -20,7 +20,7 @@ This project addresses three core enterprise AI requirements:
 ```text
 ┌────────────────────┐      ┌──────────────────────────────────────────┐
 │   Streamlit UI     │─────▶│            LangGraph Agent               │
-│ (Input & FinOps    │      │         (Azure OpenAI GPT-4o-mini)        │
+│ (Input & FinOps    │      │         (Azure OpenAI GPT-41-mini)        │
 │  Metrics Display)  │◀─────│                                          │
 └────────────────────┘      └───────────┬──────────────────┬───────────┘
                                         │                  │
