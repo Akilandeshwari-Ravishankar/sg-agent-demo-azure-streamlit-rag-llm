@@ -39,6 +39,37 @@ This project addresses three core enterprise AI requirements:
 
 ---
 
+## 📸 Proof of Execution & Azure Telemetry
+
+Below is an end-to-end walkthrough verifying the Azure AI Foundry model deployments, agentic tool-calling execution, and real-time Azure Monitor telemetry.
+
+### 1. Azure AI Foundry Model Deployments
+Active deployments of `gpt-4o-mini` (reasoning & tool orchestration) and `text-embedding-3-small` (FAISS RAG policy indexing) in Azure AI Foundry:
+
+![Azure AI Foundry Deployments](./1_deployed_open_ai_models_in_Azure_foundry.png)
+
+### 2. Application Home Screen
+The Streamlit interface ready to ingest unstructured retail banking customer requests:
+
+![Application Home Screen](./2_homescreen.png)
+
+### 3. Agent Decision, Audit Trail & FinOps Metrics
+Execution output for `CLI-01` showing parallel LangGraph tool calls (`get_client_account_api` + `search_bank_policy`), policy explainability citing `RULE 101`, latency (`2.83s`), and exact Azure token cost (`$0.000096`):
+
+![UI After User Request Hit](./3_ui_after_user_request_hit.png)
+
+### 4. Baseline Azure Telemetry (Before Request)
+Azure AI Foundry baseline request metrics prior to executing the client workflow:
+
+![Before Model Is Hit](./4_before_model_is_hit.png)
+
+### 5. Post-Execution Azure Telemetry (Model Hits Verified)
+Azure AI Foundry telemetry confirming live API hits across the deployed models following the agent execution:
+
+![Foundry Metrics After User Request](./5_foundry_metrics_after_user_request_hit_models.png)
+
+---
+
 ## 🚀 Quickstart & Local Setup
 
 ### 1. Prerequisites
