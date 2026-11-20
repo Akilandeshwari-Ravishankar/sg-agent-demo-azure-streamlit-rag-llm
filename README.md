@@ -66,7 +66,7 @@ Azure AI Foundry baseline request metrics prior to executing the client workflow
 ### 5. Post-Execution Azure Telemetry (Model Hits Verified)
 Azure AI Foundry telemetry confirming live API hits across the deployed models following the agent execution:
 
-![Foundry Metrics After User Request](./5_foundry_metrics_after_user_request_hit_models.png)
+![Foundry Metrics After User Request](./5_foundry_metrics_after_user_request_hit_model.png)
 
 ---
 
